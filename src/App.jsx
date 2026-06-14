@@ -8,14 +8,14 @@ import ReadMore from './read-more'
 import FavoriteAnimal from './FavoriteAnimal'
 import ColorChanger from './ColorChanger'
 import LikeButton from './LikeButton'
-
+import LoginForm from './LoginForm'
 
 function App() {
   
 
   return (
-   <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
-  <LikeButton />
+   <div className="">
+  <LoginForm />
 </div>
   )
 }
