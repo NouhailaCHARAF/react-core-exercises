@@ -12,13 +12,17 @@ import LoginForm from './LoginForm'
 import TodoList from './TodoList'
 import RegistrationForm from './RegistrationForm'
 import LivePreview from './LivePreview'
+import DigitalClock from './DigitalClock'
+
+
+
 
 function App() {
   
 
   return (
    <div className="">
-  <LivePreview />
+  <DigitalClock />
 </div>
   )
 }
