@@ -11,14 +11,14 @@ import LikeButton from './LikeButton'
 import LoginForm from './LoginForm'
 import TodoList from './TodoList'
 import RegistrationForm from './RegistrationForm'
-
+import LivePreview from './LivePreview'
 
 function App() {
   
 
   return (
    <div className="">
-  <RegistrationForm />
+  <LivePreview />
 </div>
   )
 }
