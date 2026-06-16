@@ -13,8 +13,7 @@ import TodoList from './TodoList'
 import RegistrationForm from './RegistrationForm'
 import LivePreview from './LivePreview'
 import DigitalClock from './DigitalClock'
-
-
+import UsersList from './UsersList'
 
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
 
   return (
    <div className="">
-  <DigitalClock />
+  <UsersList />
 </div>
   )
 }
