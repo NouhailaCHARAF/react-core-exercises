@@ -2,32 +2,32 @@ import { useState, useEffect } from "react"
 
 export default function UsersList(){
   const [list, setList] = useState([])
-  const [isLoading, setIsLoading] = useState(true) // 🔥 1. الـ State د الـ Loading بادي بـ true
-  const [error, setError] = useState(null)          // 🔥 2. الـ State د الغلط
+  const [isLoading, setIsLoading] = useState(true) 
+  const [error, setError] = useState(null)          
 
   useEffect(() => {
     const getUsers = async () => {
       try {
-        setIsLoading(true) // فاش تبدأ الرحلة نأكدوا باللي راها true
+        setIsLoading(true) 
         const response = await fetch("https://jsonplaceholder.typicode.com/users");
         
         if (!response.ok) {
-          throw new Error("Failed to fetch data!"); // يلا السيرفر جاوب بـ غلط
+          throw new Error("Failed to fetch data!"); 
         }
 
         const data = await response.json();
         setList(data);
       } catch (err) {
-        setError(err.message); // 🔥 خزن الميساج د الغلط يلا وقع كراش أو مقطوع الـ نت
+        setError(err.message); 
       } finally {
-        setIsLoading(false) // 🔥 ف كاع الحالات (النجاح أو الفشل) الـ Loading كيطفا ف اللخر
+        setIsLoading(false) 
       }
     };
 
     getUsers();
   }, []);
 
-  // ⏳ حالة 1: الشاشة فاش كتكون الداتا ف الطريق (Loading)
+  
   if (isLoading) {
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 select-none">
@@ -37,7 +37,7 @@ export default function UsersList(){
     )
   }
 
-  // ❌ حالة 2: الشاشة فاش كيوقع غلط أو الإنترنيت مقطوعة (Error)
+  
   if (error) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gray-50 p-6">
@@ -49,7 +49,7 @@ export default function UsersList(){
     )
   }
 
-  // 🎉 حالة 3: النجاح وعرض الجدول (الـ JSX ديالكِ النقي مفركس)
+ 
   return (
     <div className="min-h-screen bg-gray-50 p-6 flex items-center justify-center">
       <div className="w-full max-w-5xl overflow-x-auto rounded-2xl shadow-xl bg-white border border-gray-100">
