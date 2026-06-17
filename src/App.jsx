@@ -15,7 +15,7 @@ import LivePreview from './LivePreview'
 import DigitalClock from './DigitalClock'
 import UsersList from './UsersList'
 import ProductCard from './ProductCard'
-
+import NavBar from './NavBar'
 
 
 function App() {
@@ -23,8 +23,8 @@ function App() {
 
   return (
    <div className="flex gap-4 p-4 m-5">
-  <ProductCard imageSrc="https://images.unsplash.com/photo-1542291026-7eec264c27ff" title="Running Shoes" price="$89.99" />
-  <ProductCard imageSrc="https://images.unsplash.com/photo-1542291026-7eec264c27ff" title="Running Shoes" price="$89.99" />
+  <NavBar/>
+  
 </div>
   )
 }
