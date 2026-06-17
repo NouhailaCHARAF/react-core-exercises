@@ -16,6 +16,7 @@ import DigitalClock from './DigitalClock'
 import UsersList from './UsersList'
 import ProductCard from './ProductCard'
 import NavBar from './NavBar'
+import SideBar from './Sidebar'
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
 
   return (
    <div className="flex gap-4 p-4 m-5">
-  <NavBar/>
+  <SideBar/>
   
 </div>
   )
