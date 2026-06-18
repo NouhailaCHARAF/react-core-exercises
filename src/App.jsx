@@ -17,14 +17,14 @@ import UsersList from './UsersList'
 import ProductCard from './ProductCard'
 import NavBar from './NavBar'
 import SideBar from './Sidebar'
-
+import Modal from './Modal'
 
 function App() {
   
 
   return (
-   <div className="flex gap-4 p-4 m-5">
-  <SideBar/>
+   <div >
+  <Modal/>
   
 </div>
   )
