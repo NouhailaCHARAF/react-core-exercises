@@ -1,5 +1,7 @@
 import { useState } from "react"
 
+import UsersList from "./UsersList"
+import TodoList from "./TodoList"
 import ColorChanger from "./ColorChanger"
 import Counter from "./Counter"
 import DigitalClock from "./DigitalClock"
@@ -13,8 +15,8 @@ import ProductCard from "./ProductCard"
 import ReadMore from "./read-more"
 import RegistrationForm from "./RegistrationForm"
 import Sidebar from "./Sidebar"
-import TodoList from "./TodoList"
-import UsersList from "./UsersList"
+
+
 
 function App() {
 
