@@ -1,12 +1,13 @@
 import { useState } from "react";
 
+
 export default function Navbar() {
   const [open, setOpen] = useState(false);
- const links = ["Home", "About", "Services", "Contact"];
+  const links = ["Home", "About", "Services", "Contact"];
 
 
   return (
-    <nav className="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+    <nav className="bg-oklch(98.7% 0.002 197.1) shadow-md w-full top-0 left-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
 
       
