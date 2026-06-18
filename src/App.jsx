@@ -20,24 +20,25 @@ import Sidebar from "./Sidebar"
 
 function App() {
 
-  const [activeComponent, setActiveComponent] = useState("Color Changer")
+  const [activeComponent, setActiveComponent] = useState("Users List")
 
   const componentsList = [
     
+    
+    { name: "Users List", comp: <UsersList /> },
+    { name: "Todo List", comp: <TodoList /> },
+    { name: "Registration Form", comp: <RegistrationForm /> },
+    { name: "Login Form", comp: <LoginForm /> },
+    { name: "Modal", comp: <Modal /> },
     { name: "Color Changer", comp: <ColorChanger /> },
     { name: "Counter", comp: <Counter /> },
     { name: "Digital Clock", comp: <DigitalClock /> },
     { name: "Favorite Animal", comp: <FavoriteAnimal /> },
     { name: "Like Button", comp: <LikeButton /> },
     { name: "Live Preview", comp: <LivePreview /> },
-    { name: "Login Form", comp: <LoginForm /> },
     { name: "Product Card", comp: <ProductCard imageSrc="https://images.unsplash.com/photo-1542291026-7eec264c27ff" title="Running Shoes" price="$89.99" /> },
     { name: "Read More", comp: <ReadMore text="..." maxLength={45}/> },
-    { name: "Registration Form", comp: <RegistrationForm /> },
     { name: "Sidebar", comp: <Sidebar /> },
-    { name: "Todo List", comp: <TodoList /> },
-    { name: "Users List", comp: <UsersList /> },
-    { name: "Modal", comp: <Modal /> },
     { name: "Nav Bar", comp: <NavBar /> }
   ]
 
